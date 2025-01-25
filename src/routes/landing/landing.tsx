@@ -1,11 +1,13 @@
-import Navbar from "../../components/Navbar"
-import Hero from "./sections/hero"
+import NavBar from "../../components/Navbar";
+import About from "./sections/about";
+import Hero from "./sections/hero";
 
 export default function Landing() {
     return (
         <>
-            <Navbar />
+            <NavBar />
             <Hero />
+            <About />
         </>
     )
 }
