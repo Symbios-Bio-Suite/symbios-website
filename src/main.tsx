@@ -3,11 +3,26 @@ import { createRoot } from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './index.css'
 import Landing from './routes/landing/landing';
+import About from './routes/about/about';
+import Resources from './routes/resources/resources';
+import Contact from './routes/contact/contact';
 
 const router = createBrowserRouter([
   {
       path: "/",
       element: <Landing />,
+  },
+  {
+    path: "/about",
+    element: <About />,
+  },
+  {
+    path: "/resources",
+    element: <Resources />,
+  },
+  {
+    path: "/contact",
+    element: <Contact />,
   },
 ]);
 

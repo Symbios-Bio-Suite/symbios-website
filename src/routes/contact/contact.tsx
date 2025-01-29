@@ -1,12 +1,11 @@
 import NavBar from "../../components/NavBar";
-import Hero from "./sections/hero";
 
-export default function Landing() {
+export default function Contact() {
     return (
         <>
-            <NavBar home={true} />
+            <NavBar home={false} />
             <div className="pt-28">
-                <Hero />
+                
             </div>
         </>
     )

@@ -1,12 +1,12 @@
 import NavBar from "../../components/NavBar";
-import Hero from "./sections/hero";
+import Team from "./sections/team";
 
 export default function Landing() {
     return (
         <>
-            <NavBar home={true} />
+            <NavBar home={false} />
             <div className="pt-28">
-                <Hero />
+                <Team />
             </div>
         </>
     )

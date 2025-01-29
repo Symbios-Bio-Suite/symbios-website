@@ -1,7 +1,7 @@
 import MemberCard from "../../../components/MemberCard";
 import logo_image from "../../../assets/logo-image.png";
 
-export default function About() {
+export default function Team() {
     return (
         <div className="flex flex-col items-center px-6 mb-96">
             <img src={logo_image} className="w-10 mb-2" />
