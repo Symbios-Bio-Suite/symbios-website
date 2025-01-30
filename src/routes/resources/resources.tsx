@@ -4,7 +4,7 @@ export default function Resources() {
     return (
         <>
             <NavBar home={false} />
-            <div className="pt-28">
+            <div className="pt-32">
                 
             </div>
         </>

@@ -56,10 +56,10 @@ export default function NavBar({ home } : { home: Boolean }) {
                     </button>
                 </div>
                 {menu && (
-                    <div className={`absolute left-0 w-full flex flex-col gap-y-4 px-6 pb-6 pt-4 text-xl transition-all duration-300 text-black bg-white ${scroll ? "top-16" : "top-24"}`}>
-                            <button className="font-medium text-left cursor-pointer">About</button>
-                            <button className="font-medium text-left cursor-pointer">Resources</button>
-                            <button className="font-medium text-left cursor-pointer">Contact</button>
+                    <div className={`absolute left-0 w-full flex flex-col gap-y-4 px-6 pb-6 pt-4 text-xl transition-all duration-300 text-black bg-white shadow-lg ${scroll ? "top-16" : "top-24"}`}>
+                            <Link to="/about" className="font-medium text-left cursor-pointer">About</Link>
+                            <Link to="/resources" className="font-medium text-left cursor-pointer">Resources</Link>
+                            <Link to="/contact" className="font-medium text-left cursor-pointer">Contact</Link>
                     </div>
                 )}
             </div>

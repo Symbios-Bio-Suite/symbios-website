@@ -5,7 +5,7 @@ export default function Landing() {
     return (
         <>
             <NavBar home={true} />
-            <div className="pt-28">
+            <div className="pt-32">
                 <Hero />
             </div>
         </>

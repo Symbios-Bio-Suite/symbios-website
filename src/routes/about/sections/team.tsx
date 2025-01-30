@@ -6,7 +6,7 @@ export default function Team() {
         <div className="flex flex-col items-center px-6 mb-96">
             <img src={logo_image} className="w-10 mb-2" />
             <div className="text-4xl font-bold mb-10">Meet Our Team</div>
-            <div className="flex flex-wrap place-content-center gap-4 w-full">
+            <div className="flex flex-wrap place-content-center gap-6 w-full">
                 <MemberCard name={"Bob"} role={"Developer"} color={true} />
                 <MemberCard name={"Bob"} role={"Developer"} color={false} />
                 <MemberCard name={"Bob"} role={"Developer"} color={true} />
