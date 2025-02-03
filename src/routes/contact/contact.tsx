@@ -1,12 +1,12 @@
 import NavBar from "../../components/NavBar";
-import Hero from "./sections/hero";
+import Message from "./sections/message";
 
-export default function Landing() {
+export default function Form() {
     return (
         <>
-            <NavBar home={true} />
+            <NavBar home={false} />
             <div className="pt-32">
-                <Hero />
+                <Message />
             </div>
         </>
     )
