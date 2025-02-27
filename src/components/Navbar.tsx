@@ -44,6 +44,8 @@ export default function NavBar({ home } : { home: Boolean }) {
                     <Link to="/resources" className="hidden sm:block py-1.5 text-black">
                         Resources
                     </Link>
+                </div>
+                <div className="flex flex-row items-center gap-x-10">
                     <Link to="/contact" className="hidden sm:block bg-slate-100 hover:bg-slate-200 font-medium px-3 py-1.5 rounded-lg text-black">
                         Contact
                     </Link>
