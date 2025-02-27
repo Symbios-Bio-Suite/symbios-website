@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import gall1 from "../assets/gall1.png";
 import gall2 from "../assets/gall2.png";
 import gall3 from "../assets/gall3.png";
@@ -40,7 +40,7 @@ export default function Gallery() {
     };
 
     return (
-        <div className="w-full flex flex-col items-center justify-center">
+        <div className="w-full flex flex-col items-center justify-center overflow-hidden">
             <div className="w-[1800px] overflow-hidden">
                 <div
                     className={`flex ${isTransitioning ? 'transition-transform duration-500 ease-in-out' : ''}`}
@@ -76,5 +76,3 @@ export default function Gallery() {
         </div>
     );
 }
-
-// This should make the slider loop directly from 04/04 to 01/04 with the same smooth animation, without passing through other images! Let me know if it works! 🚀
