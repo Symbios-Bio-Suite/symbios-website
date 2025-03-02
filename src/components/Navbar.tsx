@@ -22,7 +22,7 @@ export default function NavBar({ home } : { home: Boolean }) {
     }, []);
 
     return (
-        <div className={`w-full flex flex-col justify-center bg-white shadow-lg text-white fixed px-6 transition-all duration-300 z-50 ${menu ? "bg-opacity-100" : "bg-opacity-80"}  ${scroll ? "h-16" : "h-24"}`}>
+        <div className={`w-full flex flex-col justify-center bg-white shadow text-white fixed px-6 transition-all duration-300 z-50 ${menu ? "bg-opacity-100" : "bg-opacity-80"}  ${scroll ? "h-16" : "h-20"}`}>
             <div className="flex flex-row items-center justify-between">
                 <div className="flex flex-row items-center gap-x-2.5">
                     {home ?
@@ -44,6 +44,8 @@ export default function NavBar({ home } : { home: Boolean }) {
                     <Link to="/resources" className="hidden sm:block py-1.5 text-black">
                         Resources
                     </Link>
+                </div>
+                <div className="flex flex-row items-center gap-x-10">
                     <Link to="/contact" className="hidden sm:block bg-slate-100 hover:bg-slate-200 font-medium px-3 py-1.5 rounded-lg text-black">
                         Contact
                     </Link>
@@ -56,7 +58,7 @@ export default function NavBar({ home } : { home: Boolean }) {
                     </button>
                 </div>
                 {menu && (
-                    <div className={`absolute left-0 w-full flex flex-col gap-y-4 px-6 pb-6 pt-4 text-xl transition-all duration-300 text-black bg-white shadow-lg ${scroll ? "top-16" : "top-24"}`}>
+                    <div className={`absolute left-0 w-full flex flex-col gap-y-4 px-6 pb-6 pt-4 text-xl transition-all duration-300 text-black bg-white shadow ${scroll ? "top-16" : "top-20"}`}>
                             <Link to="/about" className="font-medium text-left cursor-pointer">About</Link>
                             <Link to="/resources" className="font-medium text-left cursor-pointer">Resources</Link>
                             <Link to="/contact" className="font-medium text-left cursor-pointer">Contact</Link>
